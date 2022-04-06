@@ -1,250 +1,140 @@
-li{
-    margin: 20px;
-    font-size: 24px;
-    font-family: 'SF Pro Text';
-    font-weight: 600;
-  }
 :root {
-    --primery:#0052FFFF;
-    --secondary:#FE9526;
-    --info:#FFCB2F;
-    --success:#53D86A;
+    --primery:hsla(221, 100%, 50%, 1);
+    --secondary:hsla(31, 99%, 57%, 1);
+    --info:hsla(45, 100%, 59%, 1);
+    --success:hsla(130, 63%, 59%, 1);
+    --error:hsla(0, 100%, 60%, 1);
 }
-.primery >.big-box >div {
+.primery >.box {
     background-color: var(--primery);
 }
-.primery >.box-color>div {
+.primery-opaciti {
     background-color: var(--primery);
 }
-.primery >.box-color-opacity > div:nth-child(1) {
-    background-color: var(--primery);
+.secondary >.box {
+    background-color: var(--secondary);
+}
+.secondary-opaciti {
+    background-color: var(--secondary);
+}
+.info >.box {
+    background-color: var(--info);
+}
+.info-opaciti {
+    background-color: var(--info);
+}
+.success >.box {
+    background-color: var(--success);
+}
+.success-opaciti {
+    background-color: var(--success);
+}
+.error >.box {
+    background-color: var(--error);
+}
+.error-opaciti {
+    background-color: var(--error);
+}
+.op-8 {
     opacity: 0.08;
 }
-.primery >.box-color-opacity > div:nth-child(2) {
-    background-color: var(--primery);
+.op-16 {
     opacity: 0.16;
 }
-.primery >.box-color-opacity > div:nth-child(3) {
-    background-color: rgba(var(--primery), 0.24);
-    background-color: var(--primery);
+.op-24 {
     opacity: 0.24;
 }
-.primery >.box-color-opacity > div:nth-child(4) {
-    background-color: var(--primery);
+.op-32 {
     opacity: 0.32;
 }
-.primery >.box-color-opacity > div:nth-child(5) {
-    background-color: var(--primery);
+.op-40 {
     opacity: 0.40;
 }
-.primery >.box-color-opacity > div:nth-child(6) {
-    background-color: var(--primery);
+.op-48 {
     opacity: 0.48;
 }
-.secondary >.big-box >div {
-    background-color: var(--secondary);
+.op-100 {
+    opacity: 0.1;
 }
-.secondary >.box-color>div {
-    background-color: var(--secondary);
+.op-200 {
+    opacity: 0.2;
 }
-.secondary >.box-color-opacity > div:nth-child(1) {
-    background-color: var(--secondary);
-    opacity: 0.08;
+.op-300 {
+    opacity: 0.3;
 }
-.secondary >.box-color-opacity > div:nth-child(2) {
-    background-color: var(--secondary);
-    opacity: 0.16;
+.op-400 {
+    opacity: 0.4;
 }
-.secondary >.box-color-opacity > div:nth-child(3) {
-    background-color: rgba(var(--secondary), 0.24);
-    background-color: var(--secondary);
-    opacity: 0.24;
+.op-500 {
+    opacity: 0.5;
 }
-.secondary >.box-color-opacity > div:nth-child(4) {
-    background-color: var(--secondary);
-    opacity: 0.32;
+.op-600 {
+    opacity: 0.6;
 }
-.secondary >.box-color-opacity > div:nth-child(5) {
-    background-color: var(--secondary);
-    opacity: 0.40;
+.op-700 {
+    opacity: 0.7;
 }
-.secondary >.box-color-opacity > div:nth-child(6) {
-    background-color: var(--secondary);
-    opacity: 0.48;
+.op-800 {
+    opacity: 0.8;
 }
-.secondary >.big-box >div {
-    background-color: var(--secondary);
+.op-900 {
+    opacity: 0.9;
 }
-.secondary >.box-color>div {
-    background-color: var(--secondary);
-}
-.secondary >.box-color-opacity > div:nth-child(1) {
-    background-color: var(--secondary);
-    opacity: 0.08;
-}
-.secondary >.box-color-opacity > div:nth-child(2) {
-    background-color: var(--secondary);
-    opacity: 0.16;
-}
-.secondary >.box-color-opacity > div:nth-child(3) {
-    background-color: var(--secondary);
-    opacity: 0.24;
-}
-.secondary >.box-color-opacity > div:nth-child(4) {
-    background-color: var(--secondary);
-    opacity: 0.32;
-}
-.secondary >.box-color-opacity > div:nth-child(5) {
-    background-color: var(--secondary);
-    opacity: 0.40;
-}
-.secondary >.box-color-opacity > div:nth-child(6) {
-    background-color: var(--secondary);
-    opacity: 0.48;
-}
-.secondary >.big-box >div {
-    background-color: var(--secondary);
-}
-.secondary >.box-color>div {
-    background-color: var(--secondary);
-}
-.secondary >.box-color-opacity > div:nth-child(1) {
-    background-color: var(--secondary);
-    opacity: 0.08;
-}
-.secondary >.box-color-opacity > div:nth-child(2) {
-    background-color: var(--secondary);
-    opacity: 0.16;
-}
-.secondary >.box-color-opacity > div:nth-child(3) {
-    background-color: var(--secondary);
-    opacity: 0.24;
-}
-.secondary >.box-color-opacity > div:nth-child(4) {
-    background-color: var(--secondary);
-    opacity: 0.32;
-}
-.secondary >.box-color-opacity > div:nth-child(5) {
-    background-color: var(--secondary);
-    opacity: 0.40;
-}
-.secondary >.box-color-opacity > div:nth-child(6) {
-    background-color: var(--secondary);
-    opacity: 0.48;
-}
-.info >.big-box >div {
-    background-color: var(--info);
-}
-.info >.box-color>div {
-    background-color: var(--info);
-}
-.info >.box-color-opacity > div:nth-child(1) {
-    background-color: var(--info);
-    opacity: 0.08;
-}
-.info >.box-color-opacity > div:nth-child(2) {
-    background-color: var(--info);
-    opacity: 0.16;
-}
-.info >.box-color-opacity > div:nth-child(3) {
-    background-color: var(--info);
-    opacity: 0.24;
-}
-.info >.box-color-opacity > div:nth-child(4) {
-    background-color: var(--info);
-    opacity: 0.32;
-}
-.info >.box-color-opacity > div:nth-child(5) {
-    background-color: var(--info);
-    opacity: 0.40;
-}
-.info >.box-color-opacity > div:nth-child(6) {
-    background-color: var(--info);
-    opacity: 0.48;
-}
-.success >.big-box >div {
-    background-color: var(--success);
-}
-.success >.box-color>div {
-    background-color: var(--success);
-}
-.success >.box-color-opacity > div:nth-child(1) {
-    background-color: var(--success);
-    opacity: 0.08;
-}
-.success >.box-color-opacity > div:nth-child(2) {
-    background-color: var(--success);
-    opacity: 0.16;
-}
-.success >.box-color-opacity > div:nth-child(3) {
-    background-color: var(--success);
-    opacity: 0.24;
-}
-.success >.box-color-opacity > div:nth-child(4) {
-    background-color: var(--success);
-    opacity: 0.32;
-}
-.success >.box-color-opacity > div:nth-child(5) {
-    background-color: var(--success);
-    opacity: 0.40;
-}
-.success >.box-color-opacity > div:nth-child(6) {
-    background-color: var(--success);
-    opacity: 0.48;
-}
-/* ------------------------ */
 *{
     margin: 0;
-}
-html,body {
-    box-sizing: border-box;
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 15px;
+    padding: 0;
 }
 .wrapper {
-    display: flex;
-    
+    display: grid;
+    grid-template-columns:repeat(2, 736px);    
 }
-.primery,.secondary,.info,.success {
-    margin: 80px 80px 0px 80px ; 
-    display: flex;
-    
+.container {
+    display: grid;
+    grid-template-columns: 178px 186px 186px;
+    margin: 80px;
 }
-.big-box > div {
-    height: 130px;
+.box,.box-description {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
     width: 130px;
     border: 1px solid #E6EEFF;
     border-radius: 4px 4px 0px 0px;
 }
-.big-box > p {
-    margin-bottom: 542px;
-    width: 129px;
-    height: 48px;
-    border: 1px solid #E6EEFF;
-    border-radius: 0px 0px 4px 4px;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 17px;
-    padding-top: 5px;
+.box {
+    height: 130px;
 }
-.box-color > div, .box-color-opacity > div {
-    height: 48px;
+.opaciti {
+    display: grid;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    color: #121212;
+    grid-template-rows: repeat(9, 1fr);
+    row-gap: 16px;
+    column-gap: 20px;
+}
+.opaciti > div{
+    display: grid;
+    align-items: center;
+    grid-template-columns: 85px auto;
+}
+.opaciti> div>span {
+    border: 1px solid #E6EEFF;
+    border-radius: 4px 4px 0px 0px;
     width: 48px;
-    border: 1px solid #E6EEFF;
-    border-radius: 2px;
-    margin-bottom: 16px;
-    margin-left: 59px;
+    height: 48px;
 }
-.integer, .value {
-    flex-direction: column;
-    padding-top: 13px;
-    padding-left: 47px;
+h3 {
+    font-weight: 400;
+    font-size: 13px;
+    opacity: 0.5;
 }
-.integer > div{
-    padding-bottom: 49px;
-} 
-.value > div{
-    padding-bottom: 49px;
-} 
+li{
+    margin: 10px 0px 0px 50px;
+    font-size: 24px;
+    font-family: 'SF Pro Text';
+    font-weight: 600;
+  }
