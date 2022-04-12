@@ -1,0 +1,118 @@
+*{
+  margin:0;
+  padding: 0;
+}
+body{
+  max-width: 2410px;
+  margin: auto;
+  background: #E5E5E5;
+  color: #00194C;
+}
+.wrapper {
+  margin-left: 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 130px;
+}
+.left-icon {
+  grid-column: 2 / 4;
+}
+h1 {
+  background: #E5E5E5;
+  font-size: 25px;
+  color: rgba(65, 59, 59, 0.514);
+}
+.container {
+  display: grid;
+  width: 714px;
+  background-color:white;
+}
+.item {
+  display: grid;
+  grid-template-columns:300px 170px 150px;
+  padding: 32px;
+  align-items: center;
+}
+.title {
+  background: #E6EEFF;
+  margin: 0;
+  padding-top: 22px;
+  padding-bottom: 21px;
+}
+.rows {
+  padding-top: 48px;
+  padding-bottom: 48px;
+  border-bottom: 1px solid rgba(0, 82, 255, 0.16);
+}
+button {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  background-color:hsla(221, 100%, 50%, 1);
+  border-radius: 4px;
+  border-color:white;
+  border: none;
+  width: 131px;;
+  height: 48px;
+  color: white;
+}
+.hover:hover {
+  background: hsla(221, 100%, 65%, 1);
+}
+.focus:focus {
+  background: hsla(221, 100%, 65%, 1);
+}
+.pressed:active {
+  background: hsla(221, 100%, 75%, 1);
+}
+.disabled {
+  background:hsla(221, 100%, 50%, 0.08);
+  color: #80A9FF;
+  cursor: not-allowed;
+}
+.button-icon,.ghost-button  {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 159px;
+  height: 48px;
+}
+.arrow-back {
+  padding-right: 10px;
+  font-size:25px;
+}
+.ghost-button {
+  background: #FFFFFF;
+  color: #0052FF;
+  border: 1px solid #0052FF;
+  border-radius: 4px;
+}
+.ghost-hover:hover,.ghost-focus:focus {
+  background: #E6EEFF;
+}
+.ghost-pressed:active{
+  border: 1px solid #0039B3;
+  color: #0039B3;
+}
+.ghost-disabled {
+  border: 1px solid #B3CBFF;
+  color: #B3CBFF;
+  cursor: not-allowed;
+}
+.ghost-icon-hover:hover,
+.ghost-icon-focus:focus{
+  background: #E6EEFF;
+  border: none;
+  box-shadow: 0px 4px 10px rgba(1, 21, 52, 0.16);
+}
+.arrow-forward {
+  padding-left: 10px;
+  font-size:25px;
+}
+li{
+  margin: 10px 0px 0px 50px;
+  font-size: 24px;
+  font-family: 'SF Pro Text';
+  font-weight: 600;
+}
