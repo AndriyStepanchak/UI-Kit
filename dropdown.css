@@ -1,0 +1,125 @@
+*{
+  margin:0;
+  padding: 0;
+}
+body{
+  font-family: 'Inter';
+  font-size: 14px;
+  line-height: 22px;
+  color: #00194C;
+  background: #E5E5E5;
+}
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+}
+.container {
+  margin:20px;
+  min-width:325px;
+}
+.select {
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background: #FFFFFF;
+  margin-bottom: 20px;
+  color: #0052FF;
+  border: 1px solid #0052FF;
+  border-radius: 4px;
+  padding-left: 24px;
+  padding-right: 24px;
+  font-weight: 500;
+}
+.chevron{
+  font-size:20px;
+}
+div {
+  display: flex;
+  flex-direction:column;
+  justify-content: center;
+  min-height: 54px;
+} 
+.drop {
+  background: #FFFFFF;
+  border-radius: 4px;
+  box-shadow: 0px 4px 10px rgba(1, 21, 52, 0.16);
+}
+.drop >div {
+  border: 1px solid rgba(0, 82, 255, 0.08);
+  padding-left: 24px;
+  font-weight: 500;
+}
+.calendar {
+  border: 1px solid rgba(102, 102, 102, 0.24);
+  color: #E0E0E0;
+  font-weight: 300;
+}
+.calendar-icon{
+  font-size:25px;
+}
+.select-month {
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid rgba(0, 82, 255, 0.08);
+  border-radius: 4px;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+.chevron-calendar {
+  color: #0052FF;
+  font-size:20px;
+}
+.base {
+  font-style: normal;
+  display: grid;
+  grid-template-columns: repeat(7, 43px);
+  grid-template-rows: repeat(6, 43px);
+  align-items: center;
+  justify-items: center;
+  font-size:18px;
+}
+.drop >.base {
+  padding: 5px 0 23px 0;
+  font-weight: 300;
+  font-size: 16px; 
+}
+h2 {
+  font-size: 10px;
+  opacity: 0.5;
+  padding-top: 22px;
+  font-weight: 200; 
+}
+.previous {
+  color: #828282;
+}
+.set {
+  display: grid;
+  background: #E6EEFF;
+  color: #0052FF;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  align-content: center;
+}
+.from {
+  border-radius: 4px 0px 0px 4px;
+  background: #0052FF;
+  color: white;
+}
+.to {
+  border-radius: 0px 4px 4px 0px;
+}
+h1 {
+  font-weight:500;
+  opacity: 0.8;
+  font-size: 10px;
+  color:#7B61FF;
+}
+li{
+  text-align: center;
+  margin: 10px 0px 10px 50px;
+  font-size: 20px;
+  font-family: 'SF Pro Text';
+}
