@@ -1,27 +1,35 @@
-*{
-  margin:0;
+* {
+  margin: 0;
   padding: 0;
   color: #00194C;
 }
+
 @font-face {
-  font-family:'SF Pro Text';
+  font-family: 'SF Pro Text';
   src: url(SF-Pro-Text-Regular.otf);
 }
+
 @font-face {
-  font-family:'SF Pro Display';
+  font-family: 'SF Pro Display';
   src: url(SFPRODISPLAYREGULAR.OTF);
 }
+
 .container {
+  display: -ms-grid;
   display: grid;
   width: 1300px;
 }
+
 .typography {
+  display: -ms-grid;
   display: grid;
-  grid-template-columns:380px 95px 190px 515px;
+  -ms-grid-columns: 380px 95px 190px 515px;
+      grid-template-columns: 380px 95px 190px 515px;
   margin-left: 95px;
   margin-right: 95px;
   border-bottom: 1px solid rgba(0, 82, 255, 0.16);
 }
+
 .title {
   font-family: 'SF Pro Text';
   font-style: normal;
@@ -32,6 +40,7 @@
   margin: 0;
   padding: 22px 95px 21px 95px;
 }
+
 .rows {
   font-family: 'SF Pro Text';
   font-style: normal;
@@ -41,7 +50,8 @@
   padding-top: 48px;
   padding-bottom: 48px;
 }
-.style-h1{
+
+.style-h1 {
   font-family: 'Inter';
   font-style: normal;
   font-weight: 400;
@@ -49,6 +59,7 @@
   line-height: 24px;
   padding-top: 32px;
 }
+
 .style-p {
   font-family: 'Inter';
   font-style: normal;
@@ -56,56 +67,69 @@
   font-size: 16px;
   line-height: 24px;
 }
+
 h2, h3, h4 {
   font-family: 'SF Pro Display';
   font-style: normal;
   font-weight: 600;
 }
+
 h1 {
   font-size: 32px;
   line-height: 42px;
 }
+
 h2 {
   font-size: 28px;
   line-height: 36px;
 }
+
 h3 {
   font-size: 22px;
   line-height: 30px;
 }
+
 h4 {
   font-size: 20px;
   line-height: 28px;
 }
+
 h5 {
   font-weight: 600;
   font-size: 18px;
   line-height: 26px;
 }
+
 h6 {
   font-weight: 600;
   font-size: 16px;
   line-height: 24px;
 }
+
 .p1 {
   font-size: 20px;
   line-height: 28px;
 }
+
 .p2 {
   font-size: 18px;
   line-height: 26px;
 }
+
 .p3 {
   font-size: 16px;
   line-height: 24px;
 }
+
 .p4 {
   font-size: 14px;
   line-height: 22px;
 }
-li{
+
+li {
   margin: 10px 0px 0px 50px;
   font-size: 24px;
   font-family: 'SF Pro Text';
   font-weight: 600;
 }
+/*# sourceMappingURL=typography.css.map */
