@@ -38,7 +38,7 @@ input[type="checkbox"]:checked{
   background: #0052FF;
 }
 input[type="checkbox"]:after{
-  content: url("image/Vector.svg");
+  content: url("/image/Vector.svg");
   display: none;
 }
 input[type="checkbox"]:checked:after{
