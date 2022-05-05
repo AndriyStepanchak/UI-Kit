@@ -1,0 +1,57 @@
+@import "fonts";
+@import "reset";
+@import "variables";
+@import "components";
+.container {
+  display: grid;
+  width: 1300px;
+  color: $primeryText;
+}
+.typography {
+  @include bottomLinePadding (0,0);
+  grid-template-columns: 380px 95px 190px 515px;
+  margin: auto 95px;
+}
+.title {
+  @include sfText (600,16px);
+  @include titlePadding (22px, 95px);
+}
+.rows {
+  @include sfText (300,16px);
+  padding: 48px 0px;
+}
+.style-h1 {
+  @include interNormal (16px);
+  padding-top: 32px;
+}
+.style-p {
+  @include interNormal (16px);
+}
+h2, h3, h4 {
+  @include sfDisplay();
+}
+h1 {
+  @include textSizeHeight(32px,42px);
+}
+h2 {
+  @include textSizeHeight(28px,36px);
+}
+h3 {
+  @include textSizeHeight(22px,30px);
+}
+h4,.p1 {
+  @include textSizeHeight(20px,28px);
+}
+h5,.p2 {
+  @include textSizeHeight(18px,26px);
+}
+h6,.p3 {
+  @include textSizeHeight(16px,24px);
+}
+.p4 {
+  @include textSizeHeight(14px,22px);
+}
+li{
+  @include liStyle (blue,left)
+}
+/*# sourceMappingURL=typography.css.map */

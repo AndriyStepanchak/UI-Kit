@@ -1,0 +1,109 @@
+@import "fonts";
+@import "reset";
+@import "variables";
+@import "components";
+.primery >.box, .primery-opaciti{
+    background-color: $colorPrimeryButtons;
+}
+.secondary >.box,.secondary-opaciti {
+    background-color: $colorSecondary;
+}
+.info >.box, .info-opaciti {
+    background-color:$colorInfo;
+}
+.success >.box,.success-opaciti{
+    background-color:$colorSuccess;
+}
+.error >.box, .error-opaciti  {
+    background-color: $colorError;
+}
+.op-8 {
+    opacity: 0.08;
+}
+.op-16 {
+    opacity: 0.16;
+}
+.op-24 {
+    opacity: 0.24;
+}
+.op-32 {
+    opacity: 0.32;
+}
+.op-40 {
+    opacity: 0.40;
+}
+.op-48 {
+    opacity: 0.48;
+}
+.op-100 {
+    opacity: 0.1;
+}
+.op-200 {
+    opacity: 0.2;
+}
+.op-300 {
+    opacity: 0.3;
+}
+.op-400 {
+    opacity: 0.4;
+}
+.op-500 {
+    opacity: 0.5;
+}
+.op-600 {
+    opacity: 0.6;
+}
+.op-700 {
+    opacity: 0.7;
+}
+.op-800 {
+    opacity: 0.8;
+}
+.op-900 {
+    opacity: 0.9;
+}
+.wrapper {
+    display: grid;
+    grid-template-columns:repeat(2, 736px);    
+}
+.container {
+    display: grid;
+    grid-template-columns: 178px 186px 186px;
+    margin: 80px;
+}
+.box,.box-description {
+    @include interNormal(14px);
+    width: 130px;
+    border: 1px solid #E6EEFF;
+    border-radius: 4px 4px 0px 0px;
+}
+.box {
+    height: 130px;
+}
+.opaciti {
+    @include openSans;
+    display: grid;
+    grid-template-rows: repeat(9, 1fr);
+    row-gap: 16px;
+    column-gap: 20px;
+    div {
+        display: grid;
+        align-items: center;
+        grid-template-columns: 85px auto;
+        span {
+            border: 1px solid $titleBackground;
+            border-radius: 4px 4px 0px 0px;
+            width: 48px;
+            height: 48px; 
+        }
+    }
+}
+h3 {
+    font-weight: 400;
+    font-size: 13px;
+    opacity: 0.5;
+}
+li{
+    @include liStyle (blue,left)
+  }
+  

@@ -1,0 +1,104 @@
+@import "fonts";
+@import "reset";
+@import "variables";
+@import "components";
+body{
+  max-width: 2410px;
+  margin: auto;
+  background: $titleBackground;
+  color: $primeryText;
+}
+.wrapper {
+  margin-left: 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 130px;
+}
+.left-icon {
+  grid-column: 2 / 4;
+}
+h1 {
+  background: $titleBackground;
+  font-size: 25px;
+  color: rgba(65, 59, 59, 0.514);
+}
+.container {
+  display: grid;
+  width: 714px;
+  background-color:white;
+}
+.item {
+  display: grid;
+  grid-template-columns:300px 170px 150px;
+  padding: 32px;
+  align-items: center;
+}
+.title {
+ @include titlePadding (22px, 30px);
+ @include sfText (600,16px);
+}
+.rows {
+  @include bottomLinePadding (32px,32px);
+}
+button {
+  @include interNormal (16px);
+  background-color:$colorPrimeryButtons;
+  border-radius: 4px;
+  border: none;
+  width: 131px;
+  height: 48px;
+  color: white;
+}
+.hover:hover, .focus:focus {
+  background: hsla(221, 100%, 65%, 1);
+}
+.pressed:active {
+  background: hsla(221, 100%, 75%, 1);
+}
+.disabled {
+  background:hsla(221, 100%, 50%, 0.08);
+  color: #80A9FF;
+  cursor: not-allowed;
+}
+.button-icon,.ghost-button  {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 159px;
+  height: 48px;
+}
+.arrow-back {
+  padding-right: 10px;
+  font-size:25px;
+}
+.ghost-button {
+  background: $backgoundContainer;
+  color: $colorPrimeryButtons;
+  border: 1px solid $colorPrimeryButtons;
+  border-radius: 4px;
+}
+.ghost-hover:hover,.ghost-focus:focus {
+  background: $titleBackground;
+}
+.ghost-pressed:active{
+  border: 1px solid $ghostPressedColor;
+  color: $ghostPressedColor;
+}
+.ghost-disabled {
+  border: 1px solid $ghostDiasableColor;
+  color: $ghostDiasableColor;
+  cursor: not-allowed;
+}
+.ghost-icon-hover:hover,
+.ghost-icon-focus:focus{
+  background: $titleBackground;
+  border: none;
+  box-shadow: 0px 4px 10px rgba(1, 21, 52, 0.16);
+}
+.arrow-forward {
+  padding-left: 10px;
+  font-size:25px;
+}
+li{
+  @include liStyle (blue,left)
+}
