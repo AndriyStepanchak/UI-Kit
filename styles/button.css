@@ -1,118 +1,170 @@
-*{
-  margin:0;
-  padding: 0;
+@font-face {
+  font-family: 'SF Pro Text';
+  src: url(SF-Pro-Text-Regular.otf);
 }
-body{
+
+@font-face {
+  font-family: 'SF Pro Display';
+  src: url(SFPRODISPLAYREGULAR.OTF);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
   max-width: 2410px;
   margin: auto;
   background: #E5E5E5;
   color: #00194C;
 }
+
 .wrapper {
   margin-left: 20px;
+  display: -ms-grid;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
   gap: 130px;
 }
+
 .left-icon {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
   grid-column: 2 / 4;
 }
+
 h1 {
   background: #E5E5E5;
   font-size: 25px;
   color: rgba(65, 59, 59, 0.514);
 }
+
 .container {
+  display: -ms-grid;
   display: grid;
   width: 714px;
-  background-color:white;
+  background-color: white;
 }
+
 .item {
+  display: -ms-grid;
   display: grid;
-  grid-template-columns:300px 170px 150px;
+  -ms-grid-columns: 300px 170px 150px;
+      grid-template-columns: 300px 170px 150px;
   padding: 32px;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
+
 .title {
   background: #E6EEFF;
   margin: 0;
-  padding-top: 22px;
-  padding-bottom: 21px;
+  padding: 22px 30px;
+  font-family: 'SF Pro Text';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
 }
+
 .rows {
-  padding-top: 48px;
-  padding-bottom: 48px;
+  display: -ms-grid;
+  display: grid;
   border-bottom: 1px solid rgba(0, 82, 255, 0.16);
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
+
 button {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Inter';
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
-  background-color:hsla(221, 100%, 50%, 1);
+  background-color: #0051ff;
   border-radius: 4px;
-  border-color:white;
   border: none;
-  width: 131px;;
+  width: 131px;
   height: 48px;
   color: white;
 }
-.hover:hover {
-  background: hsla(221, 100%, 65%, 1);
+
+.hover:hover, .focus:focus {
+  background: #4d85ff;
 }
-.focus:focus {
-  background: hsla(221, 100%, 65%, 1);
-}
+
 .pressed:active {
-  background: hsla(221, 100%, 75%, 1);
+  background: #80a8ff;
 }
+
 .disabled {
-  background:hsla(221, 100%, 50%, 0.08);
+  background: rgba(0, 81, 255, 0.08);
   color: #80A9FF;
   cursor: not-allowed;
 }
-.button-icon,.ghost-button  {
+
+.button-icon, .ghost-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   width: 159px;
   height: 48px;
 }
+
 .arrow-back {
   padding-right: 10px;
-  font-size:25px;
+  font-size: 25px;
 }
+
 .ghost-button {
-  background: #FFFFFF;
-  color: #0052FF;
-  border: 1px solid #0052FF;
+  background: white;
+  color: #0051ff;
+  border: 1px solid #0051ff;
   border-radius: 4px;
 }
-.ghost-hover:hover,.ghost-focus:focus {
-  background: #E6EEFF;
+
+.ghost-hover:hover, .ghost-focus:focus {
+  background: #E5E5E5;
 }
-.ghost-pressed:active{
+
+.ghost-pressed:active {
   border: 1px solid #0039B3;
   color: #0039B3;
 }
+
 .ghost-disabled {
   border: 1px solid #B3CBFF;
   color: #B3CBFF;
   cursor: not-allowed;
 }
+
 .ghost-icon-hover:hover,
-.ghost-icon-focus:focus{
-  background: #E6EEFF;
+.ghost-icon-focus:focus {
+  background: #E5E5E5;
   border: none;
-  box-shadow: 0px 4px 10px rgba(1, 21, 52, 0.16);
+  -webkit-box-shadow: 0px 4px 10px rgba(1, 21, 52, 0.16);
+          box-shadow: 0px 4px 10px rgba(1, 21, 52, 0.16);
 }
+
 .arrow-forward {
   padding-left: 10px;
-  font-size:25px;
+  font-size: 25px;
 }
-li{
-  margin: 10px 0px 0px 50px;
-  font-size: 24px;
+
+li {
+  color: blue;
+  text-align: left;
+  margin: 10px 0px 10px 50px;
+  font-size: 20px;
   font-family: 'SF Pro Text';
-  font-weight: 600;
 }
+/*# sourceMappingURL=button.css.map */

@@ -1,0 +1,31 @@
+@font-face {
+    font-family: 'SF Pro Text';
+    src: url(SF-Pro-Text-Regular.otf);
+  }
+@font-face {
+    font-family: 'SF Pro Display';
+    src: url(SFPRODISPLAYREGULAR.OTF);
+  }
+@mixin sfText ($weight,$size) {
+    font-family: 'SF Pro Text';
+    font-style: normal;
+    font-weight:$weight;
+    font-size: $size;
+}
+@mixin interNormal ($size) {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: $size;
+}
+@mixin sfDisplay() {
+  font-family: 'SF Pro Display';
+  font-style: normal;
+  font-weight: 600;
+}
+@mixin openSans() {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+}

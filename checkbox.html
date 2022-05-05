@@ -10,45 +10,34 @@
   <li><a href="index.html">HOME</a></li>
   <div class="wrapper">
     <div class="container">
-      <div>
-        <h1>* Checkbox / Inactive</h1>
-        <input type="text" disabled>
-      </div>
-      <div>
+      <div class="check">
         <h1>* Checkbox / Active Full fill</h1>
-          <input type="checkbox" >
-        </div>
-      <div class="disabled">
-        <h1>* Checkbox / Disabled</h1>
-        <input type="text" disabled>
+        <label for="active"></label>
+        <input type="checkbox" id="active" >
       </div>
-      <div>
-        <h1>* Radio Button / Inactive</h1>
-        <input type="radio" disabled>
+      <div class="check">
+        <h1>* Checkbox / Active Full fill</h1>
+        <label for="disabled "></label>
+        <input type="checkbox" id="disabled">
       </div>
       <div>
         <h1>* Radio Button / Active</h1>
-        <input type="radio" class="radio-button" >
+        <label for="active"></label>
+        <input type="radio" id="active" >
       </div>
       <div class="disabled">
         <h1>* Radio Button / Disabled</h1>
-        <input type="radio" disabled >
+        <label for="disabled"></label>
+        <input type="radio" id="disabled" >
       </div>
     </div>
 <!-- SWITCH----------- -->
-    <div class="container-switch">
-      <div class="switch">
-        <h1>* Switch / Off</h1>
-        <input type="checkbox" class="switch-off">
-        <span class="slider round"></span>
+    <div class="container">
+      <div>
+        <h1>* Switch / on</h1>
+        <div class="switch">
+        <input type="checkbox" name="">
       </div>
-      <div class="switch">
-        <h1>* Switch / Off</h1>
-        <input type="checkbox" checked="checked" class="switch-off">
-        <span class="slider round"></span>
-      </div>
-    </div>
   </div>  
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script> 
 </body>
 </html>

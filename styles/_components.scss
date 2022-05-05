@@ -1,0 +1,40 @@
+@mixin bottomLinePadding ($top,$bottom) {
+    display: grid;
+    border-bottom: 1px solid $bottomLineColor;
+    padding-top:$top;
+    padding-bottom:$bottom;
+}
+@mixin textSizeHeight($size,$height) {
+    font-size:$size;
+    line-height:$height; 
+}
+@mixin titleDescribe {
+    background: $titleBackground;
+    font-size: 25px;
+    color:$titleColor;
+}
+@mixin titlePadding($top, $right) {
+    background: #E6EEFF;
+    margin: 0;
+    padding: $top $right;
+}
+@mixin liStyle($color, $textAlign) {
+    color: $color;
+    text-align: $textAlign;
+    margin: 10px 0px 10px 50px;
+    font-size: 20px;
+    font-family: 'SF Pro Text';
+}
+@mixin inputCheck {
+    display: grid;
+    background: $backgoundContainer;
+    border: 1px solid $colorPrimeryButtons;
+    box-sizing: border-box;
+    border-radius: 4px;
+    width: 24px;
+    height: 24px;
+    appearance: none;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+}
